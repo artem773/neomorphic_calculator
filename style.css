@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    min-height: 100vh;
+    background: radial-gradient(#262829 20%,  #222424 90%);
+}
+
+.header a{
+    margin-left: 300px;
+    position: relative;
+    color: #262829;
+    filter: blur(1px);
+    font-size: 50px;
+    margin: 50px;
+    font-weight: 100;
+    text-decoration: none;
+    text-shadow: 3px 3px 7px #1c1e1e,
+                -3px -3px 10px rgb(51, 52, 53);
+}
+
+.header:hover a{
+    color: #ffffff1f;
+    filter: blur(2px);
+    text-shadow: inset 7px 7px 7px #000000,
+                inset -5px -5px 10px rgb(170, 175, 179);
+
+}
+
+.calculator{
+    position: relative;
+    display: grid;
+    border-radius: 22px;
+    box-shadow:  5px 5px 10px #1c1e1e,
+                -5px -5px 7px rgb(51, 52, 53);
+}
+
+.calculator .value{
+    grid-column: span 4;
+    height: 100px;
+    text-align: center;
+    font-weight: 120;
+    border: none;
+    color: #72797d;
+    outline: none;
+    border-radius: 22px;
+    padding: 10px;
+    font-size: 22px;
+    text-shadow: -1px -1px 5px #5f606c, 
+                 1px 1px 5px #28292d ;
+    background-color: #262829;
+    box-shadow: inset 1px 1px 3px #1c1e1e, inset -1px -1px 5px #323235fd;
+}
+
+.calculator span{
+    display: grid;
+    margin: 3px;
+    width: 60px;
+    height: 60px;
+    place-items: center;
+    cursor: pointer;
+}
+
+.calculator .num{
+    position: relative;
+    transition: all 0.3s ease;
+    border-radius: 26px;
+    border-color: #d1d9e6;
+    color:#b8b9be;
+    box-shadow: 1px 1px 5px #1c1e1e,
+                -1px -1px 7px rgb(51, 52, 53);
+    
+}
+
+.calculator .num:hover{
+    color: #858796;
+    text-shadow: -0.1px -0.1px 5px #bcbcc2;
+    font-size: 18px;
+    transition: all 0.2s;
+    border-radius: 26px;
+    background: linear-gradient(-15deg, #262829 50%, #222424 90%);
+    box-shadow: inset 3px 3px 5px #1c1e1e,
+                inset -3px -3px 10px rgb(51, 52, 53);
+}
+
+.calculator .equal{
+    background-color: #262829;
+    grid-row: span 2;
+    height: 126px;
+}
+
+.calculator .clear{
+    color: rgb(172, 206, 195);
+    grid-column: span 2;
+    width: 126px;
+}
+
+.calculator .clear:hover{
+    color: rgb(204, 178, 178);
+}
